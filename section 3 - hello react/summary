@@ -1,0 +1,23 @@
+How does react render to the string?
+JSX
+
+How do I setup a quick web server to start using react?
+
+/project_folder
+    /public
+        /index.html
+
+What does index.html need to have?
+<!DOCTYPE html> - defines html5 markup
+<html>
+<head>
+<body>
+<meta charset="UTF-8" /> - inside head defines character set to utf-8.
+<title> - in head
+
+How do I run these files and see changes as they are made?
+Install live server
+yarn global add live-server
+Run live server
+live-server public
+That runs the public folder.

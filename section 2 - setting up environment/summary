@@ -1,0 +1,6 @@
+What do I need to setup my machine?
+
+- vscode
+- node.js
+- npm (node installs npm)
+- yarn (npm install node & do it globally)
