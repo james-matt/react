@@ -1,0 +1,34 @@
+Video 3 - Intro
+--------
+In this section we are setting up the machine using free open source software.
+
+Video 4 - Installing VSCode
+--------
+
+Visual Studio Code - Cross platform
+
+Video 5 - Installing Node.js & Yarn
+--------
+
+Install Node - JS on server
+
+Node.js
+
+We are going to use it to make a web server later.
+
+Tools that use Node:
+- webpack
+
+node -v // version
+npm -v // version (installed with node)
+
+npm and yarn do the same thing as far as grabbing dependencies.
+
+npm install -g yarn
+
+global - installs on the machine for command line
+
+yarn --version
+
+Windows needs to restart.
+

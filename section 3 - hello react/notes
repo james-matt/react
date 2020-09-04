@@ -1,0 +1,47 @@
+Video 6 - Intro
+----------
+
+React fundamentals.
+
+URL to the app we will be creating
+http://indecision.mead.io
+
+URL to the source code.
+http://links.mead.io/indecision
+
+Indecision app - list of options.
+Purple button randomly selects one.
+
+We are going to explore JSX.
+
+Video 7 - Setting up a web server
+-----------
+
+index.html
+development web server
+utility that allows us to serve up.
+
+create public folder
+
+create a index.html inside the public folder.
+
+You need a basic html for react index html.
+
+head tag create a meta tag charset "UTF-8".
+
+add title tag in head.
+
+DOCTYPE html - html 5 document
+
+
+install live server module
+live reload on asset change
+
+later we will use webpack dev server for development.
+and express for production.
+
+yarn global add live-server
+
+live-server -v // version
+
+live-server public // runs the public folder.
