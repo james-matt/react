@@ -21,3 +21,66 @@ yarn global add live-server
 Run live server
 live-server public
 That runs the public folder.
+
+What do you need to run React in the browser?
+- React Library (We used cdn path)
+- ReactDom Library (We also used cdn)
+- Your script to run with ReactDOM.render(component, domElement)
+- Get dom element using document.getElementById('app')
+
+Why do you need react dom?
+- React runs on vr, mobile and desktop. You need the dom library for react to
+run in the browser.
+
+What is JSX?
+JavaScript XML - It is a language extension of JavaScript
+
+What is Babel?
+It is a JavaScript compiler that compiles es6, es7, and react code into es5 browser safe javascript.
+
+Do you need babel for jsx to work?
+Yes, without it JSX is not understood by the browser.
+
+What are babel presets?
+Different configurations for babel that allow you to understand different syntax.
+
+What babel presets do you need?
+react,env
+
+What do I need to configure babel?
+yarn global add babel-cli
+yarn add babel-preset-env
+yarn add babel-preset-react
+
+What is the command for babel to compile?
+babel (input relative bath) --out-file (output relative path) --presets=env,react --watch
+
+What is the command for live-server to serve the compiled js?
+live-server (web server root relative path)
+
+Why do we use yarn?
+Yarn insures that all of our sub dependencies use the same version every time. When we use npm it installs
+immediate dependencies and their sub dependencies. Keeping track of the immediate dependencies in package.lock.
+yarn.lock insures ALL dependencies use the same version on each npm install.
+
+Why is it important to reinstall node modules each time using yarn install?
+node_modules varies based on npm version and operating system so it's always better to do a fresh install on each new system.
+
+What do I need to do when starting a new react project?
+- Install node
+- Install yarn
+- React
+- ReactDOM
+- install babel-cli global
+- yarn init in the project main directory.
+- setup a public directory (web server root directory)
+    - put in a index.html
+    - put in a scripts/app.js
+- yarn add the babel preset for react and env.
+- create a src directory
+- add to the src directory app.js (JSX and react code here, app.js in public is the compiled javascript)
+- document.getElementById('app')
+- ReactDOM.render(component, domElement)
+
+What is the command to install all of the node modules?
+yarn install

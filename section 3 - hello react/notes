@@ -46,5 +46,117 @@ live-server -v // version
 
 live-server public // runs the public folder.
 
-Video 8
+Video 8 - Hello React
 --------------
+
+Render contact to the dom.
+Install react using a cdn script tag.
+Later we will use webpack.
+two libraries
+reactv16 path
+companion library
+we use react-dom library for browser rendering.
+you can use react for mobile desktop and vr, so thats why
+we need a companion library to run react on the web.
+add the script tags in the body.
+add a third script tag for scripts/app.js
+since the public folder is the root of our web server
+the src on the script tag needs to be relative to public folder.
+
+React
+ReactDOM are in console because we loaded them in.
+
+JSX - JavaScript XML
+
+JavaScript syntax extension.
+
+var template = <p>This is jxs from app.js</p>
+var appRoot = document.getElementById('app')
+
+ReactDOM.render(template, appRoot)
+
+Create div with id to pass to render.
+
+take code with jsx and compile down to javascript.
+
+the browser uses babel to make this happen.
+
+Babel is a javascript compiler.
+
+Most common use case for babel is compiling es6 and es7 code into es5 to run on browsers.
+Can also do jsx.
+
+You can try it out on babels website.
+
+var template = <h1>Something new</h1>
+
+JSX calls React.createElement(
+    'p',
+    null,
+    'This is JSX from app.js!'
+)
+
+loaded react
+ReactDOM
+scripts
+app.js
+var element = document.getElementById('app')
+ReactDOM.render(template, element)
+
+Video 9 - Setting up Babel
+---------------
+Installing and setting up babel locally.
+Babel - no functionality.
+It doesn't compile on it's own.
+We need to automate compilation.
+We also have to define the presets.
+React is one of the presets for babel.
+env preset includes:
+es2015
+es2016
+es2017
+
+install babel
+install env preset
+install react preset
+
+yarn global add babel-cli
+yarn init (setup project to use yarn)
+yarn main doesn't actually matter in this project.
+yarn init creates package.json file that helps us track dependencies.
+yarn add babel-preset-react
+yarn add babel-preset-env
+now in package.json the two dependencies are installed.
+sub dependencies are also installed.
+in node modules we have all of them.
+
+yarn.lock
+Don't manually change.
+Auto generated.
+List out all of the dependencies in node modules.
+Makes sure all of the code is what it is suppose to be.
+We will always have the exact same dependencies.
+
+We want a new folder to store the compiled javascript.
+
+create src directory.
+create app.js
+
+app.js in the src folder contains jsx
+app.js in the scripts is compiled javascript.
+
+babel src/app.js --out-file public/scripts/app.js --presets=env,react
+
+babel (input) --out-file (input) --presets=env,react --watch
+
+it's important to always install node modules on your machine
+because it varies based on npm version as well as what operating
+system you are using.
+
+yarn install // installs all dependencies
+
+
+babel src/app.js --out-file public/scripts/app.js --presets=react,env --watch
+
+sets the babel presets to include es5 - es7  and react and watches for file changes for recompile
+live-server public watches the public folder for changes which occurs on recompile now.
